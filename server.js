@@ -3,8 +3,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-//var BASE_URL = 'https://hopit.herokuapp.com/';
-var BASE_URL = 'http://hop-lodfs.c9users.io/';
+var BASE_URL = 'https://hopit.herokuapp.com/';
+//var BASE_URL = 'http://hop-lodfs.c9users.io/';
 function randomStr(s) {
     return Math.round((Math.pow(36, s + 1) - Math.random() * Math.pow(36, s))).toString(36).slice(1);
 }
